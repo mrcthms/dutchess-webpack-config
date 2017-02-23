@@ -10,12 +10,10 @@ let store = configureStore(initialState);
 
 render(
   <Provider store={store}>
-    <GatewayProvider>
-      <Router
-        history={browserHistory}
-        routes={routes}
-      />
-    </GatewayProvider>
+    <Router
+      history={browserHistory}
+      routes={routes}
+    />
   </Provider>,
   document.getElementById('root')
 );
